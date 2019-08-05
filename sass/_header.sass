@@ -1,0 +1,412 @@
+.header
+ &-top
+  max-width: 1150px
+  margin: 0 auto
+  border-bottom: 1px solid rgba(#f7f5f7, 0.6)
+  padding-top: 55px
+  padding-bottom: 25px
+  display: flex
+  justify-content: space-between
+  align-items: center
+ &-menu
+  width: 430px
+  display: flex
+  justify-content: space-between
+  &__item
+   text-decoration: none
+   opacity: 0.6
+   color: #ffffff
+   font-size: 16px
+   font-weight: 300
+   transition: all 0.5s
+   &:hover
+    opacity: 1
+    border-bottom: 1px solid rgba(#ffffff, 0.5)
+ &-info
+  width: 430px
+  display: flex
+  justify-content: flex-end
+  align-items: center
+ &-contacts
+  text-align: right
+ &-phone
+  display: block
+  text-decoration: none
+  margin-bottom: 10px
+  color: #ffffff
+  font-size: 19px
+  letter-spacing: 0.33px
+  line-height: 19px
+ &-time
+  opacity: 0.6
+  color: #ffffff
+  font-size: 14px
+  font-weight: 300
+  line-height: 14px
+ &-account
+  margin-left: 28px
+  margin-right: 28px
+ &-cart
+  width: 44px
+  height: 44px
+  background-color: rgba(#caa565, .4)
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  svg
+   height: 25px
+   margin-top: -3px
+   margin-left: -1px
+  &:hover
+   background-color: rgba(#caa565, .6)
+ &-logo
+  width: 186px
+  margin-top: -25px
+  margin-bottom: -25px
+ &-nav
+  max-width: 1150px
+  margin: 0 auto
+  padding-top: 35px
+  padding-bottom: 35px
+  display: flex
+  justify-content: space-between
+  &__item
+   color: #ffffff
+   font-size: 16px
+   font-weight: 300
+   text-decoration: none
+   transition: all 0.3s
+   border-bottom: 1px solid transparent
+   &:hover
+    border-bottom: 1px solid rgba(#fff, 0.5)
+    font-weight: 700
+.mob-menu
+ display: none
+ width: 42px
+ height: 34px
+ position: relative
+ transition: all 0.5s
+ span
+  background-color: #ffffff
+  width: 100%
+  height: 8px
+  display: block
+  border-radius: 5px
+  position: absolute
+  top: 13px
+  
+  &::before
+   content: ""
+   display: block
+   background-color: #ffffff
+   border-radius: 5px
+   width: 100%
+   height: 8px
+   position: absolute
+   top: -13px
+   transition: all 0.5s
+  &::after
+   content: ""
+   display: block
+   background-color: #ffffff
+   border-radius: 5px
+   width: 100%
+   height: 8px
+   position: absolute
+   top: 13px
+   transition: all 0.5s
+ &-active
+  z-index: 6
+  position: absolute
+  top: 25px
+  left: 20px
+  span
+   height: 0
+   &::before
+    transform: rotate(45deg)
+    top: 0
+    background-color: #caa565
+   &::after
+    transform: rotate(-45deg)
+    top: 0
+    background-color: #caa565
+.mob
+ &-menu
+  &-overlay
+   width: 100vw
+   height: 0vh
+   position: fixed
+   top: 0
+   left: 0
+   background-color: rgba(#cac4c3, 0.3)
+   z-index: 6
+   transition: all 0s
+   display: block
+   &-active
+    height: 100vh
+    transition-delay: all 0.5s
+  &-wrap
+   max-width: 90%
+   width: 605px
+   background-color: #ffffff
+   height: 100vh
+   position: relative
+   top: 0
+   left: -605px
+   overflow: scroll
+   transition: left ease 0.5s
+   &-active
+    left: 0
+    transition: all 0.5s
+  &-top
+   height: 310px
+   background: url("../img/main-bg.jpg") no-repeat center
+   background-size: cover
+   border-bottom-left-radius: 25px 
+   padding-left: 100px
+   padding-top: 50px
+   margin-bottom: 120px
+   position: relative
+  &-time
+   margin-bottom: 20px
+   color: #ffffff
+   font-size: 26px
+   font-weight: 300
+   font-size: 30px
+  &-phone
+   margin-bottom: 22px
+   color: #caa565
+   font-size: 59px
+   font-weight: 400
+   text-decoration: none
+   line-height: 59px
+  &-email
+   color: #ffffff
+   font-size: 38px
+   font-weight: 300
+   text-decoration: none
+  &-btn
+   display: flex
+   justify-content: center
+   align-items: center
+   width: 470px
+   height: 86px
+   border-radius: 43px
+   border: 1px solid #caa565
+   background-color: #102d3d
+   color: #c7c7c7
+   font-size: 38px
+   font-weight: 300
+   text-decoration: none
+   position: absolute
+   bottom: -43px
+   left: 50%
+   margin-left: -235px
+   img
+    margin-right: 22px
+  &-main
+   padding-bottom: 80px
+   padding-left: 42px
+   border-bottom: 1px solid rgba(#c8c3c2, 0.5)
+  &-bottom
+   padding-top: 80px
+   padding-bottom: 80px
+   padding-left: 42px
+  &__item
+   color: #152f3b
+   font-family: "Proxima Nova"
+   font-size: 34px
+   font-weight: 300
+   line-height: 85px
+   letter-spacing: 0.05px
+   display: block
+   text-decoration: none
+ &-nav
+  &__item
+   text-decoration: none
+   color: #152f3b
+   font-size: 45px
+   font-weight: 300
+   line-height: 100px
+   display: block
+@media(max-width: 1149px)
+ .header
+  &-menu
+   width: 380px
+   &__item
+    font-size: 15px
+  &-info
+   width: 380px
+  &-nav
+   padding-top: 25px
+   padding-bottom: 25px
+   &__item
+    font-size: 14px
+@media(max-width: 991px)
+ .header
+  &-menu
+   width: 275px
+   flex-wrap: wrap
+   justify-content: flex-start
+   &__item
+    margin-right: 10px
+  &-info
+   width: 275px
+  &-nav
+   flex-wrap: wrap
+   padding-top: 15px
+   padding-bottom: 15px
+   &__item
+    margin-right: 10px
+    font-size: 20px
+    line-height: 25px
+@media(max-width: 799px)
+ .mob-menu
+  display: block
+  &-active
+   position: fixed
+ .header
+  &-menu, &-contacts, &-account
+   display: none
+  &-nav
+   display: none
+  &-top
+   border: 0
+   padding-top: 25px
+  &-cart
+   height: 77px
+   width: 77px
+   svg
+    height: 45px
+  &-info
+   width: auto
+  &-logo
+   width: 280px
+   margin-left: -250px
+   margin-right: 0
+   margin-top: -60px
+   margin-bottom: -60px
+@media(max-width: 679px)
+ .mob
+  &-menu
+   &-active
+    top: 5px
+    left: 5px
+   &-wrap
+    width: 400px
+    left: -400px
+    &-active
+     left: 0
+   &-top
+    padding-top: 30px
+    padding-left: 40px
+    height: auto
+    padding-bottom: 50px
+    margin-bottom: 40px
+   &-time
+    font-size: 24px
+    margin-bottom: 5px
+   &-phone
+    font-size: 32px
+   &-email
+    display: block
+    font-size: 24px
+   &-btn
+    width: 350px
+    max-width: 90%
+    margin-left: -175px
+    font-size: 26px
+    height: 60px
+    bottom: -30px
+    img
+     max-width: 30px
+   &-main
+    padding-top: 10px
+    padding-bottom: 20px
+   &__item
+    font-size: 22px
+    line-height: normal
+    margin-bottom: 10px
+   &-bottom
+    padding-top: 30px
+    padding-bottom: 30px
+  &-nav
+   &__item
+    font-size: 26px
+    line-height: normal
+    margin-bottom: 10px
+ .header-logo
+  margin-left: -170px
+@media(max-width: 575px)
+ .mob-menu
+  margin-left: 25px
+  span
+   height: 5px
+   &::before, &::after
+    height: 5px
+  &-active
+   z-index: 6
+   margin-left: 0 
+   position: fixed
+   top: 5px
+   left: 5px
+   width: 25px
+   height: 20px
+   span
+    height: 0
+    &::before
+     transform: rotate(45deg)
+     top: 0
+     background-color: #caa565
+     height: 5px
+    &::after
+     transform: rotate(-45deg)
+     top: 0
+     background-color: #caa565
+     height: 5px
+ .header
+  &-top
+   padding-top: 25px
+   padding-bottom: 25px 
+   padding-right: 15px
+  &-logo
+   width: 230px
+  &-cart
+   height: 50px
+   width: 50px
+   svg
+    height: 30px
+    margin-left: 0
+  &-info
+   width: auto
+ .mob-menu
+  height: 40px
+  width: 32px
+  &-top
+   padding-top: 45px
+   padding-left: 20px
+  &-btn
+   width: 250px
+   margin-left: -125px
+   height: 50px
+   bottom: -25px
+   font-size: 22px
+   img
+    margin-right: 10px
+    max-width: 25px
+  &-main
+   padding-left: 20px
+  &-bottom
+   padding-left: 20px
+@media(max-width: 459px)
+ .header-logo
+  margin-left: -80px
+@media(max-width: 369px)
+ .header
+  &-top
+   padding-top: 15px
+   padding-bottom: 15px
+  &-logo
+   width: 200px
+   margin-left: -50px

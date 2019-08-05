@@ -1,0 +1,160 @@
+.how
+ height: 600px
+ background: url("../img/how-bg.png") bottom center no-repeat
+ background-size: 102%  
+ padding-top: 90px
+ &-title
+  width: 1160px
+  max-width: 100%
+  margin: 0 auto
+  margin-bottom: 70px
+  color: #0e2933
+  font-family: Georgia
+  font-size: 55px
+  font-weight: 400
+  line-height: 56.59px
+ &-text
+  color: #0e2933
+  font-size: 21px
+  font-weight: 300
+  line-height: 30.01px
+  font-weight: 300
+  width: 340px
+  span
+   font-weight: 400
+   display: block
+   margin-top: 15px
+  &2
+   display: none
+ &-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+ &-container
+  display: flex
+ &-block
+  width: 210px
+  position: relative
+  margin-right: 56px
+  &::after
+   content: ""
+   display: block
+   width: 56px
+   height: 14px
+   background: url("../img/how-arrow.png") no-repeat
+   position: absolute
+   top: 59px
+   right: -56px
+  &:last-child
+   margin-right: 0
+   &::after
+    display: none
+ &-img
+  width: 130px
+  margin: 0 auto
+  margin-bottom: 36px
+ &-descr
+  color: #0e2933
+  font-size: 18px
+  font-weight: 400
+  max-width: 190px
+  margin: 0 auto
+  text-align: center
+@media(max-width: 1299px)
+ .how
+  &-block
+   margin-right: 40px
+   width: 165px
+   &::after
+    width: 40px
+    right: -40px
+    background-size: contain
+  &-img
+   margin-bottom: 25px
+  &-descr
+   font-size: 16px
+@media(max-width: 991px)
+ .how
+  height: 550px
+  &-text
+   display: none
+   &2
+    display: block
+    padding-top: 145px
+    margin: 0 auto
+    margin-bottom: -140px
+    font-size: 32px
+    line-height: 44px
+    max-width: 515px
+    width: auto
+  &-block
+   width: 220px
+   margin-right: 64px
+   &::after
+    right: -64px
+    width: 64px
+  &-descr
+   font-size: 18px
+@media(max-width: 799px)
+ .how
+  height: 578px
+  padding-top: 70px
+  &-title
+   margin-bottom: 60px
+   font-size: 48px
+   text-align: center
+  &-container
+   justify-content: space-between
+   width: 100%
+  &-block
+   width: 215px
+   margin-right: 0
+   &:first-child, &:last-child
+    width: 200px
+   &::after
+    width: 46px
+    right: -40px
+    top: 80px
+   &:nth-child(2)
+    &::after
+     right: -32px
+  &-img
+   width: 168px
+   margin-bottom: 22px
+  &-descr
+   font-size: 21px
+   font-weight: 300
+   max-width: 100%
+@media(max-width: 679px)
+ .how
+  height: 800px
+  &-container
+   flex-wrap: wrap
+   justify-content: center
+  &-block
+   margin-right: 30px
+   margin-left: 30px
+   margin-bottom: 25px
+   &:last-child
+    margin: 0
+   &::after
+    display: none
+  &-text2
+   margin-bottom: 0
+   padding-top: 80px
+@media(max-width: 575px)
+ .how
+  height: auto
+  padding-top: 30px
+  padding-bottom: 30px
+  &-title
+   font-size: 36px
+   margin-bottom: 25px
+  &-img
+   margin-bottom: 10px
+  &-text2
+   padding-left: 15px
+   padding-right: 15px
+   padding-top: 35px
+   font-size: 18px
+   line-height: normal

@@ -1,0 +1,375 @@
+.card
+ padding-top: 50px
+ padding-bottom: 70px
+ &-title
+  margin-bottom: 60px
+  color: #0e2933
+  font-family: Georgia
+  font-size: 32px
+  font-weight: 400
+  line-height: 56.57px
+ &-subtitle
+  color: #0e2933
+  font-size: 21px
+  font-weight: 400
+  margin-bottom: 20px
+  margin-top: 40px
+ &-wrap
+  display: flex
+  justify-content: space-between
+  align-items: baseline
+ &-main
+  width: 535px
+  display: flex
+  position: relative
+  &-descr
+   padding-top: 50px
+   &2
+    display: none
+   &-text
+    max-width: 505px
+    color: #0e2933
+    font-size: 18px
+    font-weight: 300
+    line-height: 25px
+    height: 75px
+    overflow: hidden
+    margin-bottom: 20px
+    transition: all 0.5px
+    &-active
+     height: auto
+   &-all
+    padding-bottom: 1px
+    color: #0e2933
+    border-bottom: 1px solid rgba(#0e2933, .5)
+    font-size: 16px
+    font-weight: 300
+    &2
+     display: none
+     padding-bottom: 1px
+     color: #0e2933
+     border-bottom: 1px solid rgba(#0e2933, .5)
+     font-size: 16px
+     font-weight: 300
+    &-active
+     .card-main-descr-all
+      &1
+       display: none
+      &2
+       display: inline-block
+    &:hover
+     cursor: pointer
+ &-info
+  width: 400px
+ &-features
+  width: 200px
+  &-block
+   display: flex
+   justify-content: space-between
+   align-items: flex-start
+   margin-bottom: 40px
+  &-img
+   width: 35px
+   display: flex
+   justify-content: center
+   align-items: center
+   img
+    max-width: 100%
+  &-content
+   width: 145px
+  &-title
+   color: #0e2933
+   font-size: 18px
+   font-weight: 700
+   margin-bottom: 15px
+  &-descr
+   color: #0e2933
+   font-size: 16px
+   font-weight: 300
+   line-height: 25px
+ &-price
+  color: #0e2933
+  margin-bottom: 20px
+  font-size: 27px
+  font-weight: 700
+  padding-left: 7px
+ &-btn
+  width: 171px
+  height: 48px
+  margin-left: 7px
+  border-radius: 24px
+  background-color: #caa565
+  border: none
+  color: #fefffe
+  font-family: "Proxima Nova"
+  font-size: 21px
+  font-weight: 400
+  margin-bottom: 45px
+  &:hover
+   cursor: pointer
+   background-color: darken(#caa565, 10)
+  &:focus
+   outline: none
+ &-atributes
+  padding-left: 7px
+  padding-bottom: 75px
+  border-bottom: 1px solid rgba(#000, 0.2)
+  &-atrubute
+   color: #0e2933
+   font-size: 16px
+   line-height: 25px
+   font-weight: 400
+  &-correct
+   color: #0e2933
+   font-family: "Proxima Nova"
+   font-size: 16px
+   font-weight: 300
+   line-height: 25px
+ &-delivery
+  display: flex
+  width: 340px
+  justify-content: space-between
+  &-block
+   text-align: center
+  &-img
+   height: 40px
+   margin-bottom: 10px
+  &-text
+   max-width: 130px
+   color: #0e2933
+   font-size: 16px
+   font-weight: 300
+   line-height: 20px
+ &-left
+  width: 95px
+  margin-right: 30px
+  position: relative
+  img
+   max-width: 100%
+  &-img
+   display: flex
+   justify-content: center
+   align-items: center
+   width: 92px
+   height: 90px
+   margin-top: 10px
+   margin-bottom: 10px
+  &-block
+   opacity: 0.5
+   &.slick-current
+    opacity: 1
+ &-slider
+  width: 381px
+  height: 377px
+  img
+   max-width: 100%
+  &-img
+   display: flex
+   justify-content: center
+   align-items: center
+   width: 381px
+   height: 377px
+ &-sku
+  position: absolute
+  top: -50px
+  left: 105px
+  line-height: 25px
+  color: #999999
+  font-size: 14px
+  font-weight: 400
+  line-height: 32px
+ &-wishlist
+  position: absolute
+  top: -50px
+  right: -25px
+  display: flex
+  background: transparent
+  border: 0
+  padding: 0
+  margin: 0
+  &-img
+   width: 24px
+   margin-right: 10px
+   opacity: 0.5
+  &-text
+   line-height: 25px
+   color: #0e2933
+   font-size: 16px
+   font-weight: 300
+  &:hover
+   cursor: pointer
+ &-back
+  display: none
+@media(max-width: 1299px)
+ .card
+  &-main
+   width: 400px
+   &-wrap
+    width: 400px
+  &-left
+   margin-right: 10px
+  &-slider
+   width: 280px
+   &-img
+    width: 280px
+  &-info
+   width: 300px
+  &-delivery
+   width: 100%
+@media(max-width: 991px)
+ .card
+  padding-bottom: 0
+  &-wrap
+   flex-wrap: wrap
+  &-features
+   margin-top: 40px
+   display: flex
+   width: 100%
+   justify-content: space-between
+   &-block
+    width: 24%
+@media(max-width: 799px)
+ .card
+  &-main
+   width: 100%
+   &-wrap
+    width: 100%
+   &-descr
+    display: none
+    &2
+     display: block
+     font-size: 32px
+     font-weight: 300
+     line-height: 44px
+  &-left
+   display: none
+  &-slider
+   width: 100%
+   &-img
+    width: 100% 
+  &-info
+   width: 100%
+   margin-top: 70px
+   margin-bottom: 35px
+  &-price
+   font-size: 50px
+   text-align: center
+   width: 100%
+  &-btn
+   width: 410px
+   height: 76px
+   border-radius: 53px
+   font-size: 30px
+   letter-spacing: 1.51px
+   margin: 0 auto
+   display: block
+   margin-bottom: 80px
+  &-atributes
+   padding-left: 70px
+   padding-bottom: 0px
+   border: 0
+   &-atribute
+    font-size: 32px
+   &-correct
+    font-size: 32px
+  &-subtitle
+   font-size: 40px
+   margin-bottom: 50px
+  &-delivery
+   width: 300px
+  &-features
+   flex-wrap: wrap
+   &-block
+    width: 48%
+    justify-content: flex-start
+   &-img
+    margin-right: 20px
+   &-descr
+    width: 250px
+  &-wishlist
+   line-height: 45px
+   top: -45px
+   right: 0
+   &-text
+    display: none
+   &-img
+    width: 47px
+  &-sku
+   font-size: 28px
+   line-height: 45px
+   top: -45px
+   left: 0
+  &-back
+   display: block
+   width: 10px
+   margin-right: 10px
+   padding-top: 7px
+   img
+    max-width: 100%
+  &-title
+   margin-bottom: 0
+   line-height: normal
+   &-wrap
+    display: flex
+    align-items: center
+    margin-bottom: 60px
+@media(max-width: 679px)
+ .card-features
+  &-descr
+   width: 200px
+@media(max-width: 575px)
+ .card
+  padding-left: 15px
+  padding-right: 15px
+  padding-top: 40px
+  &-title
+   line-height: normal
+   margin-bottom: 10px
+  &-subtitle
+   margin-top: 30px
+   margin-bottom: 15px
+   font-size: 28px
+   line-height: normal
+  &-main
+   flex-wrap: wrap
+   justify-content: space-between
+   &-descr
+    padding-top: 0px
+    &-text
+     margin-bottom: 5px
+  &-info
+   margin-top: 20px
+  &-price
+   font-size: 38px
+  &-btn
+   width: 100%
+   height: 70px
+   margin-bottom: 30px
+  &-atributes
+   padding-left: 0
+   &-atribute
+    font-size: 24px
+   &-correct
+    font-size: 24px
+  &-delivery
+   width: 280px
+  &-features
+   &-block
+    width: 100%
+   &-descr
+    width: 240px
+  &-wishlist
+   position: static
+   line-height: normal
+   &-img
+    width: 30px
+  &-sku
+   position: static
+   font-size: 18px
+   line-height: normal
+  &-title
+   max-width: calc(100% - 20px)
+   font-size: 28px
+   margin-bottom: 0
+   &-wrap
+    margin-bottom: 10px

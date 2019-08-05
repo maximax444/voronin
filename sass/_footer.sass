@@ -1,0 +1,216 @@
+.footer
+ padding-top: 70px
+ padding-bottom: 65px
+ background: url("../img/footer-bg.jpg") no-repeat center
+ background-size: cover
+ &-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+ &-menu
+  width: 440px
+  display: flex
+  &-block
+   width: 50%
+   display: flex
+   flex-direction: column
+   align-items: baseline
+  &-link
+   text-decoration: none
+   color: #ffffff
+   font-size: 16px
+   font-weight: 300
+   line-height: 17px
+   margin-bottom: 8px
+   margin-top: 9px
+   border-bottom: 1px solid transparent
+   transition: all 0.5s
+   &2
+    opacity: 0.6
+   &:hover
+    opacity: 1
+    border-bottom: 1px solid rgba(#ffffff, 0.5)
+ &-logo
+  width: 300px
+ &-img
+  margin-bottom: 10px
+  &::after
+   content: ""
+   width: 10px
+   height: 10px
+   background-color: #caa565
+   display: inline-block
+   border-radius: 50%
+   margin-left: 3px
+   margin-bottom: -2px
+ &-info
+  width: 440px
+  text-align: right
+ &-phone
+  color: #ffffff
+  font-size: 25px
+  font-weight: 400
+  line-height: 25px
+  text-decoration: none
+  border-bottom: 1px solid transparent
+  &:hover
+   border-bottom: 1px solid rgba(#ffffff, .5)
+   transition: all 0.5s
+ &-time
+  opacity: 0.6
+  color: #ffffff
+  font-size: 14px
+  font-weight: 300
+  line-height: 14px
+  margin-bottom: 35px
+  margin-top: 10px
+ &-pay
+  display: flex
+  width: 160px
+  justify-content: space-between
+  margin-bottom: 30px
+  margin-right: 0
+  margin-left: auto
+ &-mail
+  color: #ffffff
+  font-size: 18px
+  font-weight: 300
+  text-decoration: none
+  border-bottom: 1px solid transparent
+  &:hover
+   border-bottom: 1px solid rgba(#ffffff, .5)
+   transition: all 0.5s
+ &-bottom
+  padding-top: 30px
+  padding-bottom: 30px
+  &-wrap
+   display: flex
+   justify-content: space-between
+  &-info
+   color: #0c2731
+   font-size: 18px
+   font-weight: 300
+   width: 400px
+  &-vk
+   display: flex
+   align-items: center
+   span
+    margin-right: 17px
+   &-text
+    border-bottom: 1px dashed rgba(#000000, .5)
+    text-decoration: none
+    color: #000000
+  &-adress
+   text-align: right
+   color: #0c2731
+   font-size: 18px
+   font-weight: 300
+   width: 400px
+@media(max-width: 1299px)
+ .footer
+  &-menu
+   width: 330px
+  &-info
+   width: 330px
+@media(max-width: 991px)
+ .footer
+  &-menu
+   width: 330px
+  &-info
+   width: 270px
+  &-logo
+   width: 240px
+  &-img
+   width: 150px
+   &::after
+    width: 7px
+    height: 7px
+   img
+    max-width: 90%
+  &-bottom
+   &-info
+    width: auto
+   &-adress
+    width: auto
+@media(max-width: 799px)
+ .footer
+  padding-top: 80px
+  padding-bottom: 80px
+  &-menu
+   &-link
+    font-size: 34px
+    line-height: 75px
+  &-wrap
+   flex-direction: column
+  &-menu
+   width: 100%
+   margin-bottom: 40px
+  &-logo
+   width: 500px
+   margin-bottom: 30px
+   margin-top: -20px
+  &-info
+   width: 100%
+   text-align: left
+   position: relative
+  &-pay
+   margin-left: 0
+   margin-right: auto
+   position: absolute
+   top: 0
+   right: 0
+   flex-direction: column
+   align-items: flex-end
+   width: auto
+   margin-bottom: 0
+   img
+    margin-bottom: 15px
+  &-bottom
+   &-wrap
+    flex-direction: column-reverse
+   &-info
+    width: 100%
+    text-align: center
+   &-vk
+    width: 100%
+    text-align: center
+    justify-content: center
+    margin-bottom: 15px
+   &-adress
+    width: 100%
+    text-align: center
+    margin-bottom: 15px
+@media(max-width: 679px)
+ .footer
+  &-menu
+   &-link
+    font-size: 28px
+@media(max-width: 575px)
+ .footer
+  padding-left: 15px
+  padding-right: 15px
+  padding-top: 25px
+  padding-bottom: 25px
+  &-menu
+   margin-bottom: 25px
+   &-link
+    font-size: 15px
+    line-height: 14px
+  &-logo
+   margin-bottom: 25px
+   max-width: 80%
+  &-phone
+   font-size: 22px
+  &-time
+   margin-top: 5px
+   font-size: 12px
+   margin-bottom: 15px
+@media(max-width: 374px)
+ .footer
+  &-bottom
+   padding-top: 15px
+   padding-bottom: 15px
+   &-adress
+    font-size: 15px
+   &-info
+    font-size: 16px

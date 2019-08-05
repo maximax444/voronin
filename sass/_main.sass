@@ -1,0 +1,401 @@
+.main
+ &-block
+  display: flex
+  justify-content: center
+ &-info
+  max-width: 400px
+  padding-top: 90px
+ &-title
+  color: #ffffff
+  font-family: Georgia
+  font-size: 55px
+  font-weight: 400
+  line-height: 56.58px
+  margin-bottom: 50px
+  letter-spacing: 2.73px
+ &-descr
+  color: #ffffff
+  margin-bottom: 90px
+  font-size: 18px
+  font-weight: 300
+  line-height: 33px
+ &-btn
+  width: 219px
+  height: 58px
+  border-radius: 29px
+  background-color: #caa565
+  color: #fefffe
+  font-size: 21px
+  font-weight: 400
+  line-height: 75.01px
+  display: flex
+  justify-content: center
+  align-items: center
+  text-decoration: none
+  transition: all 0.5
+  &:hover
+   background-color: darken(#caa565, 10)
+ &-img
+  width: 754px
+  img
+   max-width: 100%
+.recomended
+ padding-top: 90px
+ padding-bottom: 90px
+ &-title
+  color: #000000
+  margin-bottom: 50px
+  font-size: 45px
+  font-weight: 400
+ &-block
+  display: flex
+  align-items: center
+ &-img
+  width: 120px
+  height: 120px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-right: 10px
+  img
+   max-width: 100%
+ &-name
+  color: #000000
+  display: block
+  text-decoration: none
+  font-size: 19px
+  margin-bottom: 20px
+  font-weight: 400
+  max-width: 172px
+  height: 46px
+  overflow: hidden
+ &-price
+  color: #000000
+  font-size: 27px
+  font-weight: 700
+.features
+ padding-top: 200px
+ padding-bottom: 240px
+ border-top: 1px solid #000000
+ &-wrap
+  display: flex
+  justify-content: space-between
+ &-block
+  max-width: 23%
+  padding-top: 40px
+  &1
+   background: url("../img/f1.png") no-repeat right top
+  &2
+   background: url("../img/f2.png") no-repeat right 20% 
+  &3
+   background: url("../img/f3.png") no-repeat right 20% 
+  &4
+   background: url("../img/f4.png") no-repeat 90% 20% 
+ &-title
+  opacity: 0.8
+  color: #0d2833
+  font-size: 60px
+  font-weight: 700
+  line-height: 22px
+  margin-bottom: 28px
+ &-descr
+  color: #0d2833
+  font-size: 18px
+  font-weight: 300
+  line-height: 27px
+.home
+ &-blocks
+  padding-top: 50px
+  padding-bottom: 50px
+  overflow: hidden
+  &-wrap
+   margin-left: -20px
+   margin-right: -20px
+ &-block
+  display: flex
+  justify-content: flex-start
+  margin-bottom: 120px
+  &-content
+   padding-top: 50px
+   position: relative
+  &-title
+   color: #0d2833
+   font-family: Georgia
+   font-size: 45px
+   font-weight: 400
+   line-height: 56.58px
+   letter-spacing: 2.23px
+   margin-bottom: 45px
+   &-bg
+    opacity: 0.03
+    color: #0d2833
+    font-family: Georgia
+    font-size: 100px
+    font-weight: 400
+    line-height: 91.13px
+    letter-spacing: 3.08px
+    position: absolute
+    left: -100px
+    top: 0
+    width: 1000px
+  &-link
+   color: #0d2833
+   font-size: 15px
+   font-weight: 400
+   line-height: 30px
+   text-decoration: none
+   display: block
+   &:hover
+    color: #caa565
+  &-img
+   width: 460px
+   height: 318px
+   background-color: #f7f5f7
+   margin-right: 200px
+   img
+    margin-top: -60px
+    margin-left: 90px
+  &:nth-child(2)
+   justify-content: flex-end
+   .home-block
+    &-content
+     text-align: right
+    &-title
+     &-bg
+      right: -50%
+      left: auto
+    &-img
+     margin-left: 290px
+     margin-right: 0
+     img
+      margin-left: 30px
+@media(max-width: 1340px)
+ .home-blocks-wrap
+  margin: 0
+@media(max-width: 1299px)
+ .main
+  &-info
+   padding-top: 70px
+  &-title
+   font-size: 45px
+  &-img
+   width: 700px
+ .features
+  padding-top: 180px
+  padding-bottom: 180px
+  &-block
+   &3
+    background: url("../img/f3.png") no-repeat right 10% 
+   &4
+    background: url("../img/f4.png") no-repeat 100% 10% 
+  &-descr
+   font-size: 16px
+   line-height: 20px
+ .home
+  &-blocks
+   padding-bottom: 0
+  &-block
+   &-img
+    margin-right: 50px
+   &:nth-child(2)
+    .home-block-img
+     margin-left: 150px
+   &-title
+    &-bg
+     font-size: 80px
+     width: 800px
+     left: -30px
+@media(max-width: 991px)
+ .main
+  &-info
+   padding-top: 40px
+  &-title
+   font-size: 35px
+   line-height: normal
+  &-img
+   width: 700px
+ .features
+  padding-top: 280px
+  padding-bottom: 140px
+  &-wrap
+   flex-wrap: wrap
+  &-block
+   width: 320px
+   max-width: 1000px
+   margin-bottom: 125px
+  &-title
+   opacity: 0.8
+   color: #0d2833
+   font-size: 77px
+   font-weight: 700
+   line-height: 28.33px
+   margin-bottom: 30px
+  &-descr
+   color: #0d2833
+   font-size: 28px
+   font-weight: 300
+   line-height: 34.77px
+ .home
+  &-block
+   margin-bottom: 80px
+   &-img
+    width: 300px
+    height: 240px
+    margin-right: 32px
+    img
+     width: 250px
+     margin: 0 auto
+     display: block
+     margin-top: -50px
+   &:nth-child(2)
+    .home-block
+     &-img
+      img
+       margin: 0 auto
+       margin-top: -50px
+     &-title
+      &-bg
+       right: -30%
+@media(max-width: 799px)
+ .main
+  &-info
+   width: 100%
+   max-width: 100%
+   padding-top: 90px
+  &-img
+   display: none
+  &-title
+   margin-bottom: 52px
+   color: #ffffff
+   font-family: Georgia
+   font-size: 77px
+   font-weight: 400
+   line-height: 79.27px
+   letter-spacing: 2.73px
+  &-descr
+   margin-bottom: 76px
+   color: #ffffff
+   font-size: 28px
+   font-weight: 300
+   line-height: 46.24px
+  &-btn
+   width: 397px
+   height: 104px
+   border-radius: 52px
+   font-size: 38px
+ .features
+  padding-bottom: 70px
+  &-title
+   font-size: 66px
+  &-descr
+   font-size: 24px
+   line-height: 30px
+ .home
+  &-blocks
+   padding-top: 0
+   padding-bottom: 0
+  &-block
+   flex-direction: column-reverse
+   align-items: flex-start
+   margin-bottom: 100px
+   &-img
+    margin-top: 70px
+   &:nth-child(2)
+    flex-direction: column
+    .home-block
+     &-title
+      &-bg
+       left: -30px
+       right: auto
+     &-img
+      margin-left: 0px
+     &-content
+      text-align: left
+@media(max-width: 679px)
+ .main
+  &-info
+   padding-top: 30px
+  &-title
+   font-size: 52px
+   margin-bottom: 30px
+   line-height: normal
+  &-descr
+   font-size: 24px
+   line-height: normal
+   margin-bottom: 35px
+  &-btn
+   max-width: 100%
+   width: 300px
+   height: 90px
+ .features
+  padding-top: 130px
+  padding-bottom: 50px
+  &-block
+   width: 48%
+   margin-bottom: 70px
+  &-title
+   font-size: 60px
+  &-descr
+   font-size: 24px
+@media(max-width: 575px)
+ .main
+  &-bg
+   margin-bottom: 100px
+  &-info
+   padding-left: 15px
+   padding-right: 15px
+  &-title
+   font-size: 36px
+  &-descr
+   font-size: 16px
+  &-btn
+   font-size: 22px
+   width: 220px
+   height: 50px
+ .recomended
+  padding-left: 15px
+  padding-right: 15px
+  padding-top: 40px
+  padding-bottom: 40px
+  &-block
+   margin: 0 auto
+   width: 290px
+  &-title
+   margin-bottom: 20px
+   font-size: 32px
+ .features
+  padding-top: 50px
+  padding-bottom: 10px
+  padding-left: 15px
+  padding-right: 15px
+  &-block
+   width: 48%
+   padding: 0
+  &-title
+   font-size: 35px
+   margin-bottom: 12px
+  &-descr
+   font-size: 15px
+   line-height: normal
+ .home
+  &-blocks
+   padding-left: 15px
+   padding-right: 15px
+  &-block
+   margin-bottom: 50px
+   &-img
+    margin-top: 50px
+    max-width: 100%
+    img
+     max-width: 90%
+   &-title
+    font-size: 24px
+    margin-bottom: 10px
+    &-bg
+     font-size: 50px
+     left: -10px
+     opacity: 0.05
+   &:nth-child(2)
+    .home-block-title-bg
+     left: -10px
+     right: auto
