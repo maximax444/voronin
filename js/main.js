@@ -86,9 +86,22 @@ $('.card-slider').slick({
  }
  
 }); */
-ymaps.ready(function () {
- var myMap = new ymaps.Map('map', {
-  center: [55.604020, 37.539473],
+
+  $(".js-partners-form").on("submit", function(event) {
+    event.preventDefault();
+    var self = $(this);
+    var inputs = self.find(".js-input");
+    var hasError = false;
+    inputs.each((id, el) => {
+      if (!$(el).val()) {
+        hasError = true;
+        $(el).addClass("has-error");
+        $(el)
+          .siblings(".js-input-message")
+          .html("Заполните это поле.");
+      }
+    });
+  });
   zoom: 15
  }, {
    searchControlProvider: 'yandex#search'
